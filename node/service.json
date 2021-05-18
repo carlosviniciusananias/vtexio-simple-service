@@ -18,6 +18,10 @@
       "path": "/_v/todo/updateTodo/:id",
       "public": true
     },
+    "deleteTodo": {
+      "path": "/_v/todo/deleteTodo/:id",
+      "public": true
+    },
     "getTodo": {
       "path": "/_v/todo/getTodo/:id",
       "public": true

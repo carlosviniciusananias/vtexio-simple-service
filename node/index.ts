@@ -4,6 +4,7 @@ import { LRUCache, method, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { status } from './middlewares/status'
 import { createTodo } from './middlewares/todo/createTodo'
+import { deleteTodo } from './middlewares/todo/deleteTodo'
 import { getAllTodos } from './middlewares/todo/getAllTodos'
 import { getTodo } from './middlewares/todo/getTodo'
 import { updateTodo } from './middlewares/todo/updateTodo'
@@ -57,6 +58,9 @@ export default new Service({
     }),
     updateTodo: method({
       PUT: [updateTodo],
+    }),
+    deleteTodo: method({
+      DELETE: [deleteTodo],
     }),
     getTodo: method({
       GET: [getTodo],
