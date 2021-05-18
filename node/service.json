@@ -9,6 +9,14 @@
     "status": {
       "path": "/_v/status/:code",
       "public": true
+    },
+    "getTodo": {
+      "path": "/_v/todo/getTodo/:id",
+      "public": true
+    },
+    "getAllTodos": {
+      "path": "/_v/todo/getAllTodos",
+      "public": true
     }
   }
 }
