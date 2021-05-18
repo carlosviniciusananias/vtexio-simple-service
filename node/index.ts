@@ -6,6 +6,7 @@ import { status } from './middlewares/status'
 import { createTodo } from './middlewares/todo/createTodo'
 import { getAllTodos } from './middlewares/todo/getAllTodos'
 import { getTodo } from './middlewares/todo/getTodo'
+import { updateTodo } from './middlewares/todo/updateTodo'
 import { validate } from './middlewares/validate'
 
 const TIMEOUT_MS = 800
@@ -52,7 +53,10 @@ export default new Service({
       GET: [validate, status],
     }),
     createTodo: method({
-      GET: [createTodo],
+      POST: [createTodo],
+    }),
+    updateTodo: method({
+      PUT: [updateTodo],
     }),
     getTodo: method({
       GET: [getTodo],
