@@ -10,6 +10,10 @@
       "path": "/_v/status/:code",
       "public": true
     },
+    "createTodo": {
+      "path": "/_v/todo/createTodo",
+      "public": true
+    },
     "getTodo": {
       "path": "/_v/todo/getTodo/:id",
       "public": true
