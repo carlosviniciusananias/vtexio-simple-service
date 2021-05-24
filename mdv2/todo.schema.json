@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "closed"]
+    }
+  },
+  "required": ["description", "status"],
+  "v-indexed": ["description", "status"],
+  "v-default-fields": ["description", "status"],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": false,
+    "publicRead": [],
+    "publicWrite": [],
+    "publicFilter": []
+  },
+  "v-cache": false
+}
