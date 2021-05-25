@@ -47,4 +47,13 @@ export default class Todo extends MasterData {
 
     return { id, ...todoInput }
   }
+
+  public async delete(id: string) {
+    await this.deleteDocument({
+      dataEntity: 'carluxoservice',
+      id,
+    })
+
+    return id
+  }
 }
